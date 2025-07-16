@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Copy to Host Directory
-      run: powershell Copy-Item -Path "C:\Users\763606-su\actions-runner\_work\VirtualMachineTesting\*" -Destination C:\inetpub\wwwroot -force
+      run: powershell Copy-Item -Path C:\Users\763606-su\actions-runner\_work\VirtualMachineTesting\* -Destination C:\inetpub\wwwroot -force
