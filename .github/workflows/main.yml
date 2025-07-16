@@ -10,4 +10,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Copy to Host Directory
+      run: powershell Copy-Item -Path C:\GitHubActions\actions-runner\_work\VirtualMachineTesting\VirtualMachineTesting\* -Destination C:\inetpub\wwwroot -force
 
